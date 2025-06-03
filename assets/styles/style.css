@@ -67,10 +67,9 @@ header nav a img {
 }
 
 header nav .logo {
-    font-family: var(--main-font);
     color: var(--black-two);
     font-size: 25px;
-    font-weight: normal;
+    font-weight: 1000;
 }
 
 /* Mobile menu button  */
