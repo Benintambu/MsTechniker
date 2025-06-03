@@ -26,7 +26,7 @@
 
     /* Padding */
     --padding-inline-mob: 20px;
-    --padding-inline-comp: 60px;
+    --padding-inline-comp: 55px;
 
     /* Others */
     --transit: all .3s ease;
@@ -257,6 +257,8 @@ header nav .contact-btn:hover {
 .item3 {
     padding: 1rem;
     color: var(--white);
+    display: flex;
+    align-items: centers;
 }
 
 .item3 ul {
@@ -269,14 +271,22 @@ header nav .contact-btn:hover {
     align-items: center;
 }
 
-.item3 ul li .i {
-    width: 15px;
-    height: 15px;
-    background-color: red;
-    margin-right: 10px;
+.item3 ul li .bx {
+    font-size: clamp(15px, .5vw, 20px);
+    margin-right: 15px;
+    color: var(--black-two);
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-.item3 ul p {
+.item3 ul li p {
     font-size: clamp(14px, 1vw, 17px);
 }
 
@@ -332,6 +342,7 @@ header nav .contact-btn:hover {
 
 .service-bottom .service-arrow {
     width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #071F30;
     color: var(--white);
@@ -344,6 +355,7 @@ header nav .contact-btn:hover {
 
 .service-bottom ul li h3 {
     font-weight: 800;
+    font-size: clamp(14px, 1.5vw, 35px);
 }
 
 /* Choice section */
@@ -502,3 +514,9 @@ header nav .contact-btn:hover {
         height: 65vh;
     }
 } */
+
+@media (max-width: 315px) {
+    .service-top h2 {
+        margin-bottom: 15px;
+    }
+}
